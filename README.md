@@ -1,4 +1,4 @@
-# ios-persistent-mem-ex
+# ios-persistent-memory-example
 Store family tree information persistently (using CoreData)
 
 Entries are grouped by Family ID's
