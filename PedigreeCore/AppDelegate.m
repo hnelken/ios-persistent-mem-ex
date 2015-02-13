@@ -7,17 +7,73 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
 #import "MasterViewController.h"
+#import "Individual.h"
+#import "Phenotype.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize individual;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Phenotype"
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    
+        Phenotype *cancer = [NSEntityDescription
+                             insertNewObjectForEntityForName:@"Phenotype"
+                             inManagedObjectContext:context];
+        Phenotype *infectious = [NSEntityDescription
+                                 insertNewObjectForEntityForName:@"Phenotype"
+                                 inManagedObjectContext:context];
+        Phenotype *heart = [NSEntityDescription
+                            insertNewObjectForEntityForName:@"Phenotype"
+                            inManagedObjectContext:context];
+        Phenotype *liver = [NSEntityDescription
+                            insertNewObjectForEntityForName:@"Phenotype"
+                            inManagedObjectContext:context];
+        Phenotype *mental = [NSEntityDescription
+                             insertNewObjectForEntityForName:@"Phenotype"
+                             inManagedObjectContext:context];
+        
+        cancer.name = @"Cancer";
+        cancer.details = @"A disease caused by an uncontrolled division of abnormal cells in a part of the body.";
+        
+        infectious.name = @"Infectious Disease";
+        cancer.details = @"A disorder caused by organisms such as bacteria, viruses, fungi or parasites.";
+        
+        heart.name = @"Heart Disease";
+        cancer.details = @"A structural or functional abnormality of the heart, or of the blood vessels supplying the heart, that impairs its normal functioning.";
+        
+        liver.name = @"Liver Disease";
+        cancer.details = @"Any damage that reduces the functioning of the liver.";
+        
+        mental.name = @"Mental Disorder";
+        mental.details = @"A mental or behavioral pattern or anomaly that causes either suffering or an impaired ability to function in ordinary life.";
+        
+        
+        self.phenotypes = [[NSArray alloc] initWithObjects:cancer, infectious, heart, liver, mental, nil];
+    
+    /*
+     
+    [son addHasObject:cancer];
+    [cancer addCarriedByObject:son];
+    
+    [dad addHasObject:heart];
+    [cancer addCarriedByObject:son];
+    
+    [mom addHasObject:infectious];
+    [cancer addCarriedByObject:son];
+     
+    */
+    
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     MasterViewController *controller = (MasterViewController *)navigationController.topViewController;

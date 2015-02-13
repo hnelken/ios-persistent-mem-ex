@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A02182C1A08495200BCA71B /* AddMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02182B1A08495200BCA71B /* AddMemberViewController.m */; };
+		4A02182F1A0855AF00BCA71B /* EditMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02182E1A0855AF00BCA71B /* EditMemberViewController.m */; };
+		4A0218321A0857CF00BCA71B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0218311A0857CF00BCA71B /* TableViewCell.m */; };
 		4A22D3471A070AA30061EA6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D3461A070AA30061EA6A /* main.m */; };
 		4A22D34A1A070AA30061EA6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D3491A070AA30061EA6A /* AppDelegate.m */; };
 		4A22D34D1A070AA30061EA6A /* PedigreeCore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D34B1A070AA30061EA6A /* PedigreeCore.xcdatamodeld */; };
-		4A22D3501A070AA30061EA6A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D34F1A070AA30061EA6A /* MasterViewController.m */; };
-		4A22D3531A070AA30061EA6A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D3521A070AA30061EA6A /* DetailViewController.m */; };
 		4A22D3561A070AA30061EA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A22D3541A070AA30061EA6A /* Main.storyboard */; };
 		4A22D3581A070AA30061EA6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A22D3571A070AA30061EA6A /* Images.xcassets */; };
 		4A22D35B1A070AA30061EA6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A22D3591A070AA30061EA6A /* LaunchScreen.xib */; };
 		4A22D3671A070AA30061EA6A /* PedigreeCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D3661A070AA30061EA6A /* PedigreeCoreTests.m */; };
+		4A22D3751A070B660061EA6A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D3741A070B660061EA6A /* MasterViewController.m */; };
+		4A22D3781A070F650061EA6A /* Individual.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D3771A070F650061EA6A /* Individual.m */; };
+		4A22D37B1A070F9D0061EA6A /* Phenotype.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A22D37A1A070F9D0061EA6A /* Phenotype.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,22 +33,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A02182A1A08495200BCA71B /* AddMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMemberViewController.h; sourceTree = "<group>"; };
+		4A02182B1A08495200BCA71B /* AddMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMemberViewController.m; sourceTree = "<group>"; };
+		4A02182D1A0855AF00BCA71B /* EditMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMemberViewController.h; sourceTree = "<group>"; };
+		4A02182E1A0855AF00BCA71B /* EditMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMemberViewController.m; sourceTree = "<group>"; };
+		4A0218301A0857CF00BCA71B /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		4A0218311A0857CF00BCA71B /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		4A22D3411A070AA20061EA6A /* PedigreeCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedigreeCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A22D3451A070AA30061EA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A22D3461A070AA30061EA6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A22D3481A070AA30061EA6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4A22D3491A070AA30061EA6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4A22D34C1A070AA30061EA6A /* PedigreeCore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PedigreeCore.xcdatamodel; sourceTree = "<group>"; };
-		4A22D34E1A070AA30061EA6A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		4A22D34F1A070AA30061EA6A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		4A22D3511A070AA30061EA6A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		4A22D3521A070AA30061EA6A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		4A22D3551A070AA30061EA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A22D3571A070AA30061EA6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A22D35A1A070AA30061EA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4A22D3601A070AA30061EA6A /* PedigreeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedigreeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A22D3651A070AA30061EA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A22D3661A070AA30061EA6A /* PedigreeCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PedigreeCoreTests.m; sourceTree = "<group>"; };
+		4A22D3731A070B660061EA6A /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
+		4A22D3741A070B660061EA6A /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
+		4A22D3761A070F650061EA6A /* Individual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Individual.h; sourceTree = "<group>"; };
+		4A22D3771A070F650061EA6A /* Individual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Individual.m; sourceTree = "<group>"; };
+		4A22D3791A070F9D0061EA6A /* Phenotype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phenotype.h; sourceTree = "<group>"; };
+		4A22D37A1A070F9D0061EA6A /* Phenotype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phenotype.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +100,19 @@
 			children = (
 				4A22D3481A070AA30061EA6A /* AppDelegate.h */,
 				4A22D3491A070AA30061EA6A /* AppDelegate.m */,
-				4A22D34E1A070AA30061EA6A /* MasterViewController.h */,
-				4A22D34F1A070AA30061EA6A /* MasterViewController.m */,
-				4A22D3511A070AA30061EA6A /* DetailViewController.h */,
-				4A22D3521A070AA30061EA6A /* DetailViewController.m */,
+				4A22D3731A070B660061EA6A /* MasterViewController.h */,
+				4A22D3741A070B660061EA6A /* MasterViewController.m */,
+				4A0218301A0857CF00BCA71B /* TableViewCell.h */,
+				4A0218311A0857CF00BCA71B /* TableViewCell.m */,
+				4A02182A1A08495200BCA71B /* AddMemberViewController.h */,
+				4A02182B1A08495200BCA71B /* AddMemberViewController.m */,
+				4A02182D1A0855AF00BCA71B /* EditMemberViewController.h */,
+				4A02182E1A0855AF00BCA71B /* EditMemberViewController.m */,
+				4A22D3761A070F650061EA6A /* Individual.h */,
+				4A22D3771A070F650061EA6A /* Individual.m */,
+				4A22D3791A070F9D0061EA6A /* Phenotype.h */,
+				4A22D37A1A070F9D0061EA6A /* Phenotype.m */,
 				4A22D3541A070AA30061EA6A /* Main.storyboard */,
-				4A22D3571A070AA30061EA6A /* Images.xcassets */,
-				4A22D3591A070AA30061EA6A /* LaunchScreen.xib */,
 				4A22D34B1A070AA30061EA6A /* PedigreeCore.xcdatamodeld */,
 				4A22D3441A070AA30061EA6A /* Supporting Files */,
 			);
@@ -104,6 +122,8 @@
 		4A22D3441A070AA30061EA6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4A22D3571A070AA30061EA6A /* Images.xcassets */,
+				4A22D3591A070AA30061EA6A /* LaunchScreen.xib */,
 				4A22D3451A070AA30061EA6A /* Info.plist */,
 				4A22D3461A070AA30061EA6A /* main.m */,
 			);
@@ -227,11 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A22D3531A070AA30061EA6A /* DetailViewController.m in Sources */,
-				4A22D3501A070AA30061EA6A /* MasterViewController.m in Sources */,
+				4A22D3751A070B660061EA6A /* MasterViewController.m in Sources */,
+				4A22D3781A070F650061EA6A /* Individual.m in Sources */,
+				4A02182F1A0855AF00BCA71B /* EditMemberViewController.m in Sources */,
 				4A22D34A1A070AA30061EA6A /* AppDelegate.m in Sources */,
+				4A0218321A0857CF00BCA71B /* TableViewCell.m in Sources */,
 				4A22D3471A070AA30061EA6A /* main.m in Sources */,
+				4A22D37B1A070F9D0061EA6A /* Phenotype.m in Sources */,
 				4A22D34D1A070AA30061EA6A /* PedigreeCore.xcdatamodeld in Sources */,
+				4A02182C1A08495200BCA71B /* AddMemberViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +446,7 @@
 				4A22D36C1A070AA30061EA6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A22D36D1A070AA30061EA6A /* Build configuration list for PBXNativeTarget "PedigreeCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +455,7 @@
 				4A22D36F1A070AA30061EA6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
